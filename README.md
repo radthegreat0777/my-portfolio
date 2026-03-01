@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio
 
-A modern, responsive portfolio website built using **HTML**, **JavaScript**, and **Tailwind CSS**.  
+A modern, responsive portfolio website built using **HTML**, **JavaScript**, and **CSS**.  
 This project showcases my skills, projects, and achievements in a clean and minimal design.
 
 ---
@@ -23,7 +23,7 @@ It serves as a central hub for recruiters, collaborators, and anyone interested 
 ## 🛠️ Technologies Used
 - **HTML5** – Semantic structure
 - **JavaScript (ES6+)** – Interactivity and dynamic content
-- **Tailwind CSS** – Modern, utility-first styling
+- **CSS** – Modern, Interactive styling
 
 ---
 
