@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Radin Punchihewa | Portfolio</title>
+  <link rel="shortcut icon" href="ai.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">radin@portfolio ~$</a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#certificates">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div style="display:flex; gap:12px; align-items:center;">
+    <button class="dark-toggle" onclick="document.body.classList.toggle('light')">Light Mode</button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#education" onclick="closeMenu()">Education</a>
+  <a href="#experience" onclick="closeMenu()">Experience</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#achievements" onclick="closeMenu()">Achievements</a>
+  <a href="#certificates" onclick="closeMenu()">Certificates</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+
+  <div class="hero-inner">
+    <!-- LEFT: text content -->
+    <div class="hero-content">
+      <div class="terminal-prompt">HelloWorld:~$ <span>whoami</span> <span style="animation: blink 1s step-end infinite; display:inline-block">▌</span></div>
+
+      <h1 class="hero-name">
+        Radin<br><span class="highlight">Punchihewa</span>
+      </h1>
+
+      <div class="hero-title">Telcom Engineering Undergraduate</div>
+
+      <p class="hero-desc">
+        Operating at the intersection of design and engineering, I approach every project as a system optimization problem—seeking elegance in code and efficiency in performance. 
+        Currently upgrading my portfolio with Advanced AI Agentic Systems and Engineering Concepts.
+      </p>
+
+      <div class="hero-tags">
+        <span class="tag">Wireless Communications</span>
+        <span class="tag">Signal Processing</span>
+        <span class="tag">Network Systems</span>
+        <span class="tag">Generative AI</span>
+        <span class="tag">Software Development</span>
+      </div>
+
+      <div class="hero-btns">
+        <a href="mailto:radin2005@hotmail.com" class="btn-primary">Get In Touch</a>
+        <a href="#projects" class="btn-secondary">View Projects</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">KDU</div>
+          <div class="stat-label">University</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">UG</div>
+          <div class="stat-label">Undergraduate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">ENTC</div>
+          <div class="stat-label">Engineering</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">SL</div>
+          <div class="stat-label">Sri Lanka</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: profile image -->
+    <div class="hero-image-wrap">
+      <div class="hero-image-frame" id="heroFrame">
+        <img src="image1.png" alt="Radin Punchihewa" class="hero-image" />
+    </div>
+  </div>
+
+  <div class="signal-line"></div>
+</section>
+
+<!-- ABOUT / FOCUS AREAS -->
+<section id="about">
+  <div class="section-header reveal">
+    <h2 class="section-title">What I Work On</h2>
+    <p class="section-sub">Exploring the core disciplines of telecommunication engineering and modern computing technologies.</p>
+  </div>
+
+  <div class="focus-grid">
+    <div class="focus-card reveal">
+      <div class="focus-icon">📡</div>
+      <h3>Wireless Communications</h3>
+      <div class="focus-tags">
+        <span class="focus-tag">RF Systems</span>
+        <span class="focus-tag">Antenna Design</span>
+        <span class="focus-tag">4G/5G/6G</span>
+      </div>
+      <p>Studying the principles of modern wireless communication systems, including radio frequency design,
+         modulation techniques, and the evolution towards next-generation mobile networks.</p>
+    </div>
+
+    <div class="focus-card reveal">
+      <div class="focus-icon">📶</div>
+      <h3>Signal Processing</h3>
+      <div class="focus-tags">
+        <span class="focus-tag">DSP</span>
+        <span class="focus-tag">Filtering</span>
+        <span class="focus-tag">Modulation</span>
+      </div>
+      <p>Applying digital signal processing techniques to analyze, filter, and transform signals.
+         Focused on real-time processing and practical implementation in communication systems.</p>
+    </div>
+
+    <div class="focus-card reveal">
+      <div class="focus-icon">🤖</div>
+      <h3>Generative AI & Software</h3>
+      <div class="focus-tags">
+        <span class="focus-tag">Gen AI</span>
+        <span class="focus-tag">Python</span>
+        <span class="focus-tag">Web Dev</span>
+      </div>
+      <p>Combining software development skills with emerging AI technologies to build intelligent
+         applications. Interested in AI-driven solutions for network optimization and automation.</p>
+    </div>
+
+    <div class="focus-card reveal">
+      <div class="focus-icon">🌐</div>
+      <h3>Network Systems</h3>
+      <div class="focus-tags">
+        <span class="focus-tag">Protocols</span>
+        <span class="focus-tag">IoT</span>
+        <span class="focus-tag">Network Design</span>
+      </div>
+      <p>Understanding network architectures, protocols, and infrastructure. Exploring how IoT
+         and smart systems leverage telecommunications to connect devices at scale.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-header reveal">
+    <h2 class="section-title">Academic Journey</h2>
+    <p class="section-sub">Building a strong foundation in telecommunications and engineering at KDU.</p>
+  </div>
+
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div>
+        <div class="edu-degree">B.Sc. Engineering (Hons.) — Electronic & Telecommunication Engineering</div>
+        <div class="edu-school">General Sir John Kotelawala Defence University · Ratmalana - Sri Lanka</div>
+        <div class="edu-detail">Undergraduate degree in Telecommunication Engineering, covering wireless communications,
+          signal processing, network systems, electronics, and software engineering.</div>
+        <div class="focus-tags" style="margin-top:14px">
+          <span class="focus-tag">Telecommunications</span>
+          <span class="focus-tag">Wireless Systems</span>
+          <span class="focus-tag">Signal Processing</span>
+          <span class="focus-tag">Network Engineering</span>
+          <span class="focus-tag">Electronics</span>
+          <span class="focus-tag">Software Engineering</span>
+        </div>
+      </div>
+      <div class="edu-badge">
+        In Progress<br>
+        <span style="color:var(--accent); font-size:13px">KDU</span>
+        <br>
+        <span style="color:var(--accent); font-size:13px">2025-Present</span>
+      </div>
+    </div>
+
+    <div class="edu-card reveal">
+      <div>
+        <div class="edu-degree">Advance AI & Software Engineering </div>
+        <div class="edu-school">C-Clarke International Institute of Digital Sciences · Moratuwa - Sri Lanka</div>
+        <div class="edu-detail">
+          Studying Artificial Intelligence and Software Engineering under the Supervision of Industry Leading Technical Specialists.
+          <br><br>
+
+          Professional Certification Program emphasizes core areas such as Machine Learning, Data Science, Software Development, Algorithms, Cloud Computing, and Intelligent Systems. 
+          It equips me with both theoretical knowledge and practical skills to design innovative AI solutions and build robust software applications for real‑world challenges.
+        </div>
+        <div class="focus-tags" style="margin-top:14px">
+          <span class="focus-tag">REACT</span>
+          <span class="focus-tag">WebDev</span>
+          <span class="focus-tag">Python</span>
+          <span class="focus-tag">LangChain & LangGraph</span>
+          <span class="focus-tag">LLM Engineering</span>
+          <span class="focus-tag">Agentic Workflows</span>
+          <span class="focus-tag">Gen AI</span>
+          <span class="focus-tag">Prompt Engineering</span>
+          <span class="focus-tag">SQL</span>
+          <span class="focus-tag">AI DevOps and MLOps</span>
+          <span class="focus-tag">AI Product Development</span>
+          <span class="focus-tag">GIT & GitHub</span>
+        </div>
+      </div>
+      <div class="edu-badge">
+        In Progress<br>
+        <span style="color:var(--accent); font-size:13px">2025-Present</span>
+      </div>
+    </div>
+
+    <div class="edu-card reveal">
+      <div>
+        <div class="edu-degree">G.C.E. Advanced Level</div>
+        <div class="edu-school">Maliyadeva College (Kurunegala) · Physical Science Stream</div>
+        <div class="edu-detail">
+          Obtained strong foundational knowledge in physics, chemistry, and mathematics through the GCE A/L curriculum and engaged in a variety of activities in the school life.
+          <br>
+          B - Combined Maths | B - Chemistry | C - Physics for GCE A/L 2024.</div>
+      
+        <div class="focus-tags" style="margin-top:14px">
+          <span class="focus-tag">Project Management</span>
+          <span class="focus-tag">Leadership</span>
+          <span class="focus-tag">Analytical Skills</span>
+          <span class="focus-tag">Time Management</span>
+          <span class="focus-tag">Problem Solving</span>
+        </div>
+      </div>
+      <div class="edu-badge">Completed - (2011-2024)</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header reveal">
+    <h2 class="section-title">Professional Experience</h2>
+    <p class="section-sub">Practical exposure in engineering, technology, and leadership.</p>
+  </div>
+
+  <div class="exp-list">
+    <div class="exp-card reveal">
+      <div class="exp-dot"></div>
+      <div>
+        <div class="exp-role">Supervisor of Media</div>
+        <div class="exp-org">IET on Campus KDU · Present</div>
+        <div class="exp-desc">
+          Leading the media team for the Institution of Engineering and Technology (IET) student chapter at KDU.
+          <br> 
+          Responsible for content creation, social media management, and event coverage to promote engineering activities and engage the student community.
+        </div>
+        <div class="exp-tags">
+          <span class="focus-tag">Social Media Management</span>
+          <span class="focus-tag">Event Coverage</span>
+          <span class="focus-tag">Team Leadership</span>
+          <span class="focus-tag">Community Engagement</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card reveal" style="opacity:0.6; pointer-events:none; cursor:default">
+      <div class="exp-dot" style="background:var(--muted); box-shadow:none"></div>
+      <div>
+        <div class="exp-role" style="color:var(--muted)">More Experience Coming Soon</div>
+        <div class="exp-org">Internships · Research · Industry roles</div>
+        <div class="exp-desc">This section will be updated with internships, part-time roles, and research experience as they are added.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+  <div class="section-header reveal">
+    <h2 class="section-title">Projects & Work</h2>
+    <p class="section-sub">Showcasing my work in Telecommunications, Software, Electronics and AI.</p>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-title">
+        <h3><a href="https://github.com/radthegreat0777/AI-Projects/tree/main/CryptoAnalyzer%20AI" style="text-decoration:none; color:inherit">Crypto Analyzer AI</a></h3>
+        <div class="project-desc">
+          A real-time AI data visualization FAST API integrated app built to simplify complex crypto network behaviors for users.
+        </div>
+        <div class="project-tags">
+          <span class="focus-tag">Python</span>
+          <span class="focus-tag">AI</span>
+          <span class="focus-tag">FAST API</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-title">
+        <h3><a href="https://github.com/radthegreat0777/Web-Projects/tree/main" style="text-decoration:none; color:inherit">Web Projects</a></h3>
+        <div class="project-desc">
+          A Collection of web projects that I have worked on in my free time.
+        </div>
+        <div class="project-tags">
+          <span class="focus-tag">HTML,CSS,JS</span>
+          <span class="focus-tag">NODEJS</span>
+          <span class="focus-tag">EXPRESSJS</span>
+          <span class="focus-tag">TAILWIND</span>
+          <span class="focus-tag">REACT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-title">
+        <h3><a href="https://github.com/radthegreat0777/My-Python-Projects" style="text-decoration:none; color:inherit">Python Projects</a></h3>
+        <div class="project-desc">
+          A Collection of web projects that I have worked on in my free time.
+        </div>
+        <div class="project-tags">
+          <span class="focus-tag">Fundamentals</span>
+          <span class="focus-tag">Error Handling</span>
+          <span class="focus-tag">Python</span>
+          <span class="focus-tag">OOP</span>
+          <span class="focus-tag">Critical Thinking</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-title">
+        <h3><a href="https://github.com/radthegreat0777/AI-Projects/tree/main/AdaptiveRAG%20QA%20System" style="text-decoration:none; color:inherit">Adaptive AI RAG System</a></h3>
+        <div class="project-desc">
+          Adaptive Retrieval-Augmented Generation (RAG) System that enhances AI responses using dynamic data retrieval techniques for an HR Documentation or Any other Documentation.
+        </div>
+        <div class="project-tags">
+          <span class="focus-tag">Langgraph</span>
+          <span class="focus-tag">Langchain</span>
+          <span class="focus-tag">Python</span>
+          <span class="focus-tag">Logics and AI</span>
+          <span class="focus-tag">Problematic Thinking</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional project cards can be added here -->
+  </div>
+
+  
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header reveal">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-sub">Languages, tools, and technologies I work with.</p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-group reveal">
+      <h3>Programming Languages</h3>
+      <div class="skill-chips">
+        <span class="skill-chip">C++</span>
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">Java</span>
+        <span class="skill-chip">SQL</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <h3>AI & Emerging Tech</h3>
+      <div class="skill-chips">
+        <span class="skill-chip">Generative AI</span>
+        <span class="skill-chip">LLMs and AI Agent Workflows</span>
+        <span class="skill-chip">AI Integration</span>
+        <span class="skill-chip">Langgraph & Langchain</span>
+        <span class="skill-chip">Prompt Engineering</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <h3>Web Development</h3>
+      <div class="skill-chips">
+        <span class="skill-chip">HTML/CSS</span>
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">Web Design</span>
+        <span class="skill-chip">React</span>
+        <span class="skill-chip">Node.js</span>
+        <span class="skill-chip">Express.js</span>
+        <span class="skill-chip">Tailwind CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <h3>Telecom & Engineering</h3>
+      <div class="skill-chips">
+        <span class="skill-chip">Signal Processing</span>
+        <span class="skill-chip">RF Systems</span>
+        <span class="skill-chip">Network Protocols</span>
+        <span class="skill-chip">Circuit Design</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal">
+      <h3>Tools</h3>
+      <div class="skill-chips">
+        <span class="skill-chip">MATLAB</span>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-header reveal">
+    <h2 class="section-title">Recognition & Achievements</h2>
+    <p class="section-sub">Academic honours, competition results, and recognitions throughout my engineering journey.</p>
+  </div>
+
+  <div class="ach-grid">
+
+    <div class="ach-card reveal">
+      <img src="iet.svg" alt="IET Icon" class="ach-icon" style="width: 90px; height: 90px;"/>
+      <div class="ach-place">Student Member</div>
+      <div class="ach-name">Institution of Engineering & Technology</div>
+      <div class="ach-detail">Professional Membership of Engineering Undergraduate Recognised Globally and Verified from IET UK</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="section-header reveal">
+    <h2 class="section-title">Certifications</h2>
+    <p class="section-sub">Professional development and specialized courses in telecommunications, networking, and software.</p>
+  </div>
+
+  <div class="certs-grid">
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">💻</div>
+      <div>
+        <div class="cert-name">Python (Basic)</div>
+        <div class="cert-org">HackerRank</div>
+        <div class="cert-date">2025 · Fundamental Expertise Verification of Python Programming</div>
+        <div class="focus-tags" style="margin-top:10px">
+          <span class="focus-tag">Critical Thinking</span>
+          <span class="focus-tag">Problem Solving</span>
+          <span class="focus-tag">Software Engineering</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">🌐</div>
+      <div>
+        <div class="cert-name">GEN AI 101</div>
+        <div class="cert-org">Olee AI LLC</div>
+        <div class="cert-date">2025 · Fundemental Knowledge on Managing and Designing AI Agentic Systems</div>
+        <div class="focus-tags" style="margin-top:10px">
+          <span class="focus-tag">GEN AI</span>
+          <span class="focus-tag">Agentic Workflows</span>
+          <span class="focus-tag">LLM and Prompt Integration</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-sub">Open to collaborations, opportunities, and engineering conversations.</p>
+  </div>
+
+  <div class="contact-wrapper">
+    <div class="reveal">
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <a href="mailto:radin2005@hotmail.com">radin2005@hotmail.com</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <span style="font-size:14px;color:var(--muted)">General Sir John Kotelawala Defence University, Sri Lanka</span>
+        </div>
+      </div>
+
+      <div class="contact-social">
+        <a class="social-btn" href="https://www.linkedin.com/in/radin-punchihewa-901167371/">LinkedIn</a>
+        <a class="social-btn" href="https://github.com/radthegreat0777">GitHub</a>
+      </div>
+    </div>
+
+    <div class="contact-card reveal">
+      <h3>Radin Punchihewa</h3>
+      <p>Interested in collaboration, research projects, freelance position... Let's connect!</p>
+      <a href="mailto:radin2005@hotmail.com" class="btn-primary">Send Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Radin Punchihewa</div>
+  <div class="footer-copy">© 2026 RadTech Systems · All Rights Reserved</div>
+</footer>
+
+<style>
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+</style>
+ 
+<script src="script.js"></script>
+</body>
+</html>
